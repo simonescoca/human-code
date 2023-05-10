@@ -1,0 +1,47 @@
+ORDINARE UNA PIZZA - Team 6 - HUMAN CODE
+
+Tu non hai fame?!
+Dopo una lunga giornata passata al pc, ho proprio voglia di concedermi una bella pizza succulenta! Sì, ma quale? Fammi dare un occhio al listino… Va beh, è inutile, tanto alla fine ordino sempre la stessa: una classica prosciutto e funghi. La pizza arriva ancora fumante, chissà se riuscirò a mangiarla tutta!
+Di sicuro se ne avanzo una fetta devo ricordarmi di metterla in frigo, non come l’ultima volta! 
+
+1. Decido di mangiare una pizza
+2. Prendo telefono
+3. Recupero i numeri di telefono di massimo 4 pizzerie
+4. Prendo il primo numero
+5. Chiamo pizzeria
+6. Aspetto che mi rispondano
+    6a. IF (Non Rispondono)
+            IF (Il numero è irraggiungibile)
+                -Chiamo una pizzeria diversa (torno al punto 4)
+            ELSE (Il numero è occupato)
+                -Richiamo la stessa pizzeria
+                IF (Non rispondono)
+                    -Chiamo una pizzeria diversa (torno al punto 4)
+                ELSE (Rispondono)
+                    -Vai a 6b.
+    -6b. ELSE (Ci rispondono)
+            -Chiedo se fanno consegna a domicilio
+            IF (Non consegnano)
+                -Chiamo una pizzeria diversa (torno al punto 4)
+            ELSE (Consegnano)
+                -Chiedo se possono fare una pizza prosciutto e funghi al momento
+                IF (Hanno i funghi && il prosciutto && la fanno adesso)
+                    -Ordino la pizza all'orario disponibile
+                    -Aspetto la pizza
+                        IF (se arriva)
+                            -Prendo la pizza
+                            -Pago il fattorino
+                            -Taglio la pizza
+                            -Mangio una fetta
+                                IF (Non sono sazio && la pizza non è finita)
+                                    -Mangio un'altra fetta
+                                ELSE IF (Sono sazio)
+                                    IF (La pizza è finita)
+                                        -Termina programma con rutto -FRAGOROSO-
+                                    ELSE (Rimane una o più fette)
+                                        -La/le metto in frigo
+                                        -Termina programma con rutto -FRAGOROSO-
+                        ELSE (se non arriva prima di un'ora)
+                            -Digiuno e preghiera (Termina programma)
+                ELSE ()
+                    -Chiamo una pizzeria diversa(torna punto 4)
